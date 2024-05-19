@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<TITLE> Simple Calculator </TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- begin hiding JavaScript from older browsers
+
+function calculator() {
+document.form1.ans.value=eval(document.form1.calc.value)
+}
+// end the JavaScript hiding	-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM NAME="form1">
+This expression:<BR>
+<INPUT TYPE="TEXT" ONBLUR="calculator()" SIZE="75" NAME="calc" ><BR>
+Evaluates to: <INPUT TYPE="TEXT" NAME="ans">
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE> The Radio Buttons </TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- begin hiding JavaScript from older browsers
+
+function checkRadio () {
+for (var i=0; i<document.myForm.age.length;i++) {
+if (document.myForm.age[i].checked==true) {
+alert("you selected button number "+(i+1)+".")
+}
+}
+}
+
+
+// end the JavaScript hiding	-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<B>Please tell me your age</B>
+<FORM NAME="myForm">
+<INPUT TYPE="RADIO" NAME="age" CHECKED>Less than 10 year old <BR>
+<INPUT TYPE="RADIO" NAME="age">10-30 Year old <BR>
+<INPUT TYPE="RADIO" NAME="age">Over the hill!<P>
+<INPUT TYPE="BUTTON" VALUE="Submit" ONCLICK="checkRadio()">
+</FORM>
+</BODY>
+</HTML>

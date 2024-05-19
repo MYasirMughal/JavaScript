@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE> Continual prompt -2</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- begin hiding JavaScript from older browsers
+
+function doMath() {
+var a=parseInt (document.calculate.num1.value)
+var b=parseInt (document.calculate.num2.value)
+if (document.calculate.operation[0].CHECKED) {
+var c=a+b
+}
+else {
+var c=a-b
+}
+document.calculate.answer.value=c
+}
+// end the JavaScript hiding	-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM NAME="calculate">
+Enter Value 1:<INPUT TYPE="TEXT" NAME="num1"><BR>
+Enter Value 2:<INPUT TYPE="TEXT" NAME="num2"><BR>
+<INPUT TYPE="RADIO" NAME="operation">Addition
+<INPUT TYPE="RADIO" NAME="operation" CHECKED>Substraction <BR>
+<INPUT TYPE="BUTTON" VALUE="Do the Math" ONCLICK="doMath()">
+<BR>
+Answer: <INPUT TYPE="TEXT" NAME="answer">
+</FORM>
+</BODY>
+</HTML>

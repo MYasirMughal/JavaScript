@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<TITLE> Continual prompt </TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- begin hiding JavaScript from older browsers
+
+function practiceMath() {
+var a=prompt("Enter the first number:","")
+var b=prompt("Enter the second number:","")
+if (document.forms[0].elements[0].checked) {
+var c=parseInt(a)+parseInt(b)
+alert("Adding these numbers give us "+c+",")
+}
+else {
+var c=parseFloat(a)-parseFloat(b)
+alert("Substracting these numbers gives us "+parseFloat(c)+",")
+}
+}
+// end the JavaScript hiding	-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<INPUT TYPE="RADIO" NAME="whatMath" CHECKED>Addition
+<INPUT TYPE="RADIO" NAME="whatMath">Substraction <BR>
+<INPUT TYPE="BUTTON" VALUE="Let me practice" ONCLICK="practiceMath()">
+</FORM>
+</BODY>
+</HTML>
